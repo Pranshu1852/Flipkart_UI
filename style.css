@@ -7,7 +7,6 @@
 body {
   font-family: "Montserrat", serif;
   background-color: #f1f3f6;
-  margin: auto;
 }
 
 .homepage {
@@ -22,7 +21,6 @@ a {
 .homepage__navbar {
   height: 5vh;
   padding: 1.5vh;
-  width: 100%;
   background-color: #2778ec;
   display: flex;
   flex-direction: row;
@@ -39,7 +37,7 @@ a {
 .navbar__searchbar {
   background-color: white;
   width: 30vw;
-  height: 100%;
+  height: 80%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -154,6 +152,7 @@ a {
   fill: black;
 }
 
+
 @media (max-width: 768px) {
   .homepage__navbar {
     justify-content: space-between;
@@ -181,6 +180,6 @@ a {
   }
 
   .category__name {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
