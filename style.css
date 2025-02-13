@@ -177,6 +177,7 @@ a {
 
 .icon--downarrow--white {
   fill: var(--color-white);
+  width: 1.2rem;
 }
 
 .navbar__button--cart {
