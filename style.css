@@ -30,9 +30,6 @@
   --height-8: 80%;
   --height-9: 90%;
   --height-10: 100%;
-  --g-half: 0.5vw;
-  --g-1: 1vw;
-  --g-3: 3vw;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -175,7 +172,7 @@ a {
   flex-direction: row;
   align-items: center;
   font-weight: bold;
-  gap: var(--g-half);
+  gap: 0.5rem;
 }
 
 .icon--downarrow--white {
@@ -189,7 +186,7 @@ a {
   align-items: center;
   color: var(--color-white);
   font-weight: bold;
-  gap: var(--g-half);
+  gap: 0.5rem;
 }
 
 .icon--cart {
@@ -219,7 +216,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: var(--g-1);
+  gap: 1rem;
 }
 
 .category__image {
@@ -232,7 +229,7 @@ a {
   flex-direction: row;
   align-items: center;
   text-align: center;
-  gap: var(--g-half);
+  gap: 0.5rem;
   color: var(--color-black);
   font-size: var(--font-sm);
   font-weight: var(--font-weight-medium);
