@@ -168,6 +168,7 @@ body {
   background-color: var(--color-white1);
   margin: auto;
   line-height: 1;
+  min-width: 320px;
 }
 
 .homepage {
@@ -634,6 +635,7 @@ a {
 
   .homepage__dealsbar {
     height: auto;
+    width: 90%;
   }
 
   .dealsbar__header {
@@ -699,6 +701,10 @@ a {
     display: inline;
     height: 20px;
     width: 20px;
+  }
+
+  .maincontent__itemsection{
+    width: 90%;
   }
 }
 
