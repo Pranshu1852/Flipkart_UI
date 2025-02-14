@@ -606,6 +606,10 @@ a {
     padding: 1.5vh 4vw;
   }
 
+  .navbar__section2{
+    gap: 1rem;
+  }
+
   .navbar__button--more {
     display: none;
   }
