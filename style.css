@@ -180,15 +180,22 @@ a {
   text-decoration: none;
 }
 
-.homepage__navbar {
-  height: 40px;
-  padding: 15px 0px;
+.navbar{
   background-color: var(--color-blue);
+}
+
+.homepage__navbar {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 15px 0px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 10vw;
+  gap: 10rem;
+  width: 100%;
+  max-width: 120rem;
+  margin: auto;
 }
 
 .navbar__logo {
@@ -200,6 +207,7 @@ a {
 .navbar__searchbar {
   background-color: var(--color-white);
   width: 30vw;
+  max-width: 600px;
   height: var(--height-10);
   display: flex;
   flex-direction: row;
@@ -224,6 +232,7 @@ a {
 .searchbar__logo {
   width: 25px;
   color: var(--color-blue);
+  cursor: pointer;
 }
 
 .navbar__section1 {
@@ -303,6 +312,10 @@ a {
   overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  max-width: 120rem;
 }
 
 .homepage__category::-webkit-scrollbar {
@@ -350,7 +363,11 @@ a {
   align-items: center;
   margin: 1rem 0rem;
   gap: 1rem;
-  width: 100%;
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 120rem;
 }
 
 .homepage__dealsbar {
@@ -358,7 +375,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   gap: 0.5rem;
-  width: 90vw;
+  width: 100%;
   margin: auto;
 }
 
@@ -368,8 +385,8 @@ a {
   background-color: var(--color-white);
   position: relative;
   box-shadow: 0 4px 4px -2px var(--color-black8);
-  min-width: 75vw;
-  width: 100%;
+  flex: 1;
+  width: 70%;
 }
 
 .dealsbar__upper {
@@ -527,8 +544,7 @@ a {
 }
 
 .poster__image {
-  max-width: 15rem;
-  width: 13vw;
+  width: 15rem;
   object-fit: cover;
   padding: 0.5rem;
   background-color: var(--color-white);
@@ -549,7 +565,7 @@ a {
   position: relative;
   box-shadow: 0 4px 4px -2px var(--color-black8);
   margin: auto;
-  width: 90vw;
+  width: 100%;
 }
 
 .itemsection__upper {
@@ -559,7 +575,7 @@ a {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--color-gray);
-  padding: 2vh 1.5vw;
+  padding: 1rem 1.5rem;
 }
 
 .itemsection__header {
@@ -586,14 +602,20 @@ a {
   transition-duration: 0.12s;
 }
 
+@media (max-width: 1124px) {
+  .homepage__category {
+    justify-content: start;
+    padding: 2vh 5vw;
+  }
+}
+
 @media (max-width: 992px) {
   html {
     font-size: 15px;
   }
 
-  .homepage__category {
-    justify-content: start;
-    padding: 2vh 5vw;
+  .navbar__button--more{
+    display: none;
   }
 }
 
