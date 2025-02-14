@@ -427,7 +427,14 @@ a {
   height: var(--height-10);
   padding: 1.5rem 0rem;
   overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+
+.dealsbar__productgroup::-webkit-scrollbar {
+  display: none;
+}
+
 
 .product__leftsection {
   min-width: 230px;
