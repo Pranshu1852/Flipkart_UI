@@ -529,7 +529,7 @@ a {
 .poster__image {
   max-width: 15rem;
   width: 13vw;
-  /* object-fit: cover; */
+  object-fit: cover;
   padding: 0.5rem;
   background-color: var(--color-white);
   box-shadow: 0 4px 4px -2px var(--color-black8);
