@@ -10,53 +10,56 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" type="image/png">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="homepage">
-      <nav class="homepage__navbar">
-        <div class="navbar__section1">
-          <img
-            class="navbar__logo"
-            src="assets/svgs/logo.svg"
-            alt="flipkart logo"
-          />
-          <div class="navbar__searchbar">
-            <input
-              class="searchbar__input"
-              type="text"
-              placeholder="Search for products, brands and more"
-            />
+      <div class="navbar">
+        <nav class="homepage__navbar">
+          <div class="navbar__section1">
             <img
-              class="searchbar__logo"
-              src="assets/svgs/searchicon.svg"
-              alt="search icon"
+              class="navbar__logo"
+              src="assets/svgs/logo.svg"
+              alt="flipkart logo"
             />
+            <div class="navbar__searchbar">
+              <input
+                class="searchbar__input"
+                type="text"
+                placeholder="Search for products, brands and more"
+              />
+              <img
+                class="searchbar__logo"
+                src="assets/svgs/searchicon.svg"
+                alt="search icon"
+              />
+            </div>
           </div>
-        </div>
-        <div class="navbar__section2">
-          <a class="navbar__button--login" href="#">Login</a>
-          <a class="navbar__button--more" href="#"
-            >More
-            <img
-              class="icon--downarrow--white"
-              src="assets/svgs/downwhite.svg"
-              alt="down arrow white"
-            />
-          </a>
-          <a class="navbar__button--cart" href="#"
-            ><img
-              class="icon--cart"
-              src="assets/cart-73-24.png"
-              alt="cart icon"
-            />
-            Cart</a
-          >
-        </div>
-      </nav>
+          <div class="navbar__section2">
+            <a role="button" class="navbar__button--login" href="#">Login</a>
+            <a role="button" class="navbar__button--more" href="#"
+              >More
+              <img
+                class="icon--downarrow--white"
+                src="assets/svgs/downwhite.svg"
+                alt="down arrow white"
+              />
+            </a>
+            <a role="button" class="navbar__button--cart" href="#"
+              ><img
+                class="icon--cart"
+                src="assets/cart-73-24.png"
+                alt="cart icon"
+              />
+              Cart</a
+            >
+          </div>
+        </nav>
+      </div>
 
       <section class="homepage__category">
-        <a href="#" class="category__section">
+        <a role="link" href="#" class="category__section">
           <img
             class="category__image"
             src="assets/image.png"
@@ -65,7 +68,7 @@
           />
           <h1 class="category__name">Top Offers</h1>
         </a>
-        <a href="#" class="category__section">
+        <a role="link" href="#" class="category__section">
           <img
             class="category__image"
             src="https://rukminim2.flixcart.com/flap/168/168/image/29327f40e9c4d26b.png?q=100"
@@ -74,7 +77,7 @@
           />
           <h1 class="category__name">Grocery</h1>
         </a>
-        <a href="#" class="category__section">
+        <a role="link" href="#" class="category__section">
           <img
             class="category__image"
             src="https://rukminim2.flixcart.com/flap/168/168/image/22fddf3c7da4c4f4.png?q=100"
@@ -83,7 +86,7 @@
           />
           <h1 class="category__name">Mobiles</h1>
         </a>
-        <a href="#" class="category__section">
+        <a role="link" href="#" class="category__section">
           <img
             class="category__image"
             src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0d75b34f7d8fbcb3.png?q=100"
@@ -99,7 +102,7 @@
             />
           </h1>
         </a>
-        <a href="#" class="category__section">
+        <a role="link" href="#" class="category__section">
           <img
             class="category__image"
             src="https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100"
@@ -115,7 +118,7 @@
             />
           </h1>
         </a>
-        <a href="#" class="category__section">
+        <a role="link" href="#" class="category__section">
           <img
             class="category__image"
             src="https://rukminim2.flixcart.com/flap/64/64/image/ab7e2b022a4587dd.jpg?q=100"
@@ -131,7 +134,7 @@
             />
           </h1>
         </a>
-        <a href="#" class="category__section">
+        <a role="link" href="#" class="category__section">
           <img
             class="category__image"
             src="https://rukminim2.flixcart.com/fk-p-flap/168/168/image/0139228b2f7eb413.jpg?q=100"
@@ -156,7 +159,7 @@
             </svg>
           </h1>
         </a>
-        <a href="#" class="category__section">
+        <a role="link" href="#" class="category__section">
           <img
             class="category__image"
             src="https://rukminim2.flixcart.com/flap/168/168/image/71050627a56b4693.png?q=100"
@@ -182,6 +185,289 @@
           </h1>
         </a>
       </section>
+      <main class="homepage__maincontent">
+        <section class="homepage__dealsbar">
+          <div class="dealsbar__leftsection">
+            <div class="dealsbar__upper">
+              <div class="dealsbar__header">
+                <h1 class="dealsbar__headingtext">Deals of the Day</h1>
+                <div class="dealsbar__timer">
+                  <img class="icon--clock" src="assets/clock.png" alt="clock icon" />
+                  <p class="timer__text">22 : 07 : 36 Left</p>
+                </div>
+              </div>
+              <a class="dealsbar__button" href="#">VIEW ALL</a>
+            </div>
+            <div class="dealsbar__productgroup">
+              <a role="link" href="#" class="product__link">
+                <div id="product1" class="productgroup__product">
+                  <div class="product__leftsection">
+                    <img
+                      class="product__image"
+                      src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/15157018/2021/8/16/de908722-30f8-4568-93a4-e38576f922ad1629130574111LOISCARONMLC-8260TRENDINGDAYDATEFUNCTIONINGWATCH1.jpg"
+                      alt="watch image"
+                      loading="lazy"
+                    />
+                    <div class="product__discription">
+                      <h1 class="product__name">Casio, Fastrack, Sonata...</h1>
+                      <p class="product__discount">Upto 80%+Extra 10% Off</p>
+                      <p class="product__discountdetails">Knockout Deals!</p>
+                    </div>
+                  </div>
+                  <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                </div>
+              </a>
+              <a role="link" href="#" class="product__link">
+                <div class="productgroup__product">
+                  <div class="product__leftsection">
+                    <img
+                      class="product__image"
+                      src="https://m.media-amazon.com/images/I/51pjTNSn0qL.jpg"
+                      alt="home temple image"
+                      loading="lazy"
+                    />
+                    <div class="product__discription">
+                      <h1 class="product__name">Home Temples & more</h1>
+                      <p class="product__discount">Extra 10% Off</p>
+                      <p class="product__discountdetails">
+                        Space Saving furniture
+                      </p>
+                    </div>
+                  </div>
+                  <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                </div>
+              </a>
+              <a role="link" href="#" class="product__link">
+                <div class="productgroup__product">
+                  <div class="product__leftsection">
+                    <img
+                      class="product__image"
+                      src="https://rukminim2.flixcart.com/image/416/416/xif0q/cases-covers/flip-cover/c/w/k/m-12253-melfo-original-imah5z9gvztbkb8q.jpeg?q=70&crop=false"
+                      alt="tablet cases image"
+                      loading="lazy"
+                    />
+                    <div class="product__discription">
+                      <h1 class="product__name">Premium Tablet Cases</h1>
+                      <p class="product__discount">Extra 10% Off</p>
+                      <p class="product__discountdetails">For All Top Models</p>
+                    </div>
+                  </div>
+                  <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                </div>
+              </a>
+              <a role="link" href="#" class="product__link">
+                <div class="productgroup__product">
+                  <div class="product__leftsection">
+                    <img
+                      class="product__image"
+                      src="https://rukminim2.flixcart.com/image/832/832/kuyf8nk0/sweatshirt/m/v/s/s-aw21metswt012a-metronaut-original-imag7ysacpxquhkt.jpeg?q=70&crop=false"
+                      alt="Jackets, Dresses & More"
+                      loading="lazy"
+                    />
+                    <div class="product__discription">
+                      <h1 class="product__name">Metronaut, Provogue &....</h1>
+                      <p class="product__discount">From ₹249+Extra 10% Off</p>
+                      <p class="product__discountdetails">
+                        Jackets, Dresses & More
+                      </p>
+                    </div>
+                  </div>
+                  <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                </div>
+              </a>
+              <a role="link" href="#" class="product__link">
+                <div class="productgroup__product">
+                  <div class="product__leftsection">
+                    <img
+                      class="product__image"
+                      src="https://rukminim2.flixcart.com/image/416/416/keiuxzk0/mobile/q/u/p/lava-a7-2020-lf7000-a7-original-imafv6rfgdmcgcrg.jpeg?q=70&crop=false"
+                      alt="phone image"
+                      loading="lazy"
+                    />
+                    <div class="product__discription">
+                      <h1 class="product__name">LAVA A1500</h1>
+                      <p class="product__discount">Flat ₹830 off</p>
+                      <p class="product__discountdetails">Now ₹999</p>
+                    </div>
+                  </div>
+                  <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                </div>
+              </a>
+              <a role="link" href="#" class="product__link">
+                <div class="productgroup__product">
+                  <div class="product__leftsection">
+                    <img
+                      class="product__image"
+                      src="https://rukminim2.flixcart.com/image/416/416/keiuxzk0/mobile/q/u/p/lava-a7-2020-lf7000-a7-original-imafv6rfgdmcgcrg.jpeg?q=70&crop=false"
+                      alt="phone image"
+                      loading="lazy"
+                    />
+                    <div class="product__discription">
+                      <h1 class="product__name">LAVA A1500</h1>
+                      <p class="product__discount">Flat ₹830 off</p>
+                      <p class="product__discountdetails">Now ₹999</p>
+                    </div>
+                  </div>
+                  <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                </div>
+              </a>
+              <a role="link" href="#" class="product__link">
+                <div id="product8" class="productgroup__product">
+                  <div class="product__leftsection">
+                    <img
+                      class="product__image"
+                      src="https://rukminim2.flixcart.com/image/416/416/xif0q/gamingconsole/y/t/t/-original-imah247ufwcmzvnm.jpeg?q=70&crop=false"
+                      alt="ps5 image"
+                      loading="lazy"
+                    />
+                    <div class="product__discription">
+                      <h1 class="product__name">SONY PlayStation5 Console</h1>
+                      <p class="product__discount">Upto 80%+Extra 10% Off</p>
+                      <p class="product__discountdetails">Knockout Deals!</p>
+                    </div>
+                  </div>
+                  <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                </div>
+              </a>
+              <input id="toggle--left" type="radio" class="hidden-radio">
+              <label for="toggle--left" class="btn btn--left"><a href="#product1"
+                ><img class="icon--left" src="./assets/svgs/leftarrow.svg" alt="leftarrow">
+              </a></label>
+              <input id="toggle--right" type="radio" class="hidden-radio">
+              <label for="toggle--right" class="btn btn--right"><a href="#product8"
+                ><img class="icon--right" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+              </a></label>
+            </div>
+          </div>
+          <img
+            class="poster__image"
+            src="assets/poster.png"
+            alt="india ka fortune studio poster"
+          />
+        </section>
+
+        <section class="maincontent__itemsection">
+          <div class="itemsection__upper">
+            <div class="itemsection__header">
+              <h1 class="itemsection__headingtext">
+                Books And music Instruments
+              </h1>
+              <p class="itemsection__subtext">Shop Now!</p>
+            </div>
+            <a class="dealsbar__button" href="#">VIEW ALL</a>
+          </div>
+          <div class="dealsbar__productgroup">
+            <a role="link" href="#" class="product__link">
+              <div id="product1" class="productgroup__product">
+                <div class="product__leftsection">
+                  <img
+                    class="product__image"
+                    src="https://5.imimg.com/data5/ANDROID/Default/2022/8/TC/HY/DJ/20250707/product-jpeg-1000x1000.jpg"
+                    alt="harmonium image"
+                    loading="lazy"
+                  />
+                  <div class="product__discription">
+                    <h1 class="product__name">Harmoniums</h1>
+                    <p class="product__discount">Up to 60% Off</p>
+                    <p class="product__discountdetails">Shop Now!</p>
+                  </div>
+                </div>
+                <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+              </div>
+            </a>
+            <a role="link" href="#" class="product__link">
+              <div class="productgroup__product">
+                <div class="product__leftsection">
+                  <img
+                    class="product__image"
+                    src="https://m.media-amazon.com/images/I/311Y1x7w6FL.jpg"
+                    alt="flute image"
+                    loading="lazy"
+                  />
+                  <div class="product__discription">
+                    <h1 class="product__name">Flutes</h1>
+                    <p class="product__discount">Up to 80% Off</p>
+                    <p class="product__discountdetails">Shop Now!</p>
+                  </div>
+                </div>
+                <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+              </div>
+            </a>
+            <a role="link" href="#" class="product__link">
+              <div class="productgroup__product">
+                <div class="product__leftsection">
+                  <img
+                    class="product__image"
+                    src="https://rukminim2.flixcart.com/image/416/416/xif0q/acoustic-guitar/j/c/e/rvl-38c-lgp-rd-revel-original-imah4eabzerc8epe.jpeg?q=70&crop=false"
+                    alt="Acoustic Guitars"
+                    loading="lazy"
+                  />
+                  <div class="product__discription">
+                    <h1 class="product__name">Acoustic Guitars</h1>
+                    <p class="product__discount">Starting ₹1799</p>
+                    <p class="product__discountdetails">Juarez, Revel..</p>
+                  </div>
+                </div>
+                <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+              </div>
+            </a>
+            <a role="link" href="#" class="product__link">
+              <div class="productgroup__product">
+                <div class="product__leftsection">
+                  <img
+                    class="product__image"
+                    src="https://rukminim2.flixcart.com/image/416/416/jzfvma80/guitar-capo/v/z/a/combo-pack-ag-011-string-set-agc-20-with-6-celluloid-picks-original-imafjgggxx3swzbb.jpeg?q=70&crop=false"
+                    alt="Musical Accessories"
+                    loading="lazy"
+                  />
+                  <div class="product__discription">
+                    <h1 class="product__name">Musical Accessories</h1>
+                    <p class="product__discount">Up to 80% Off</p>
+                    <p class="product__discountdetails">Shop Now!</p>
+                  </div>
+                </div>
+                <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+              </div>
+            </a>
+            <a role="link" href="#" class="product__link">
+              <div class="productgroup__product">
+                <div class="product__leftsection">
+                  <img
+                    class="product__image"
+                    src="https://m.media-amazon.com/images/I/511Y9QIanNL._SX679_.jpg"
+                    alt="Microphone Accessories"
+                    loading="lazy"
+                  />
+                  <div class="product__discription">
+                    <h1 class="product__name">Microphone Accessories</h1>
+                    <p class="product__discount">Up to 80% Off</p>
+                    <p class="product__discountdetails">Shop Now!</p>
+                  </div>
+                </div>
+                <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+              </div>
+            </a>
+            <a role="link" href="#" class="product__link">
+              <div class="productgroup__product">
+                <div class="product__leftsection">
+                  <img
+                    class="product__image"
+                    src="https://rukminim2.flixcart.com/image/416/416/xif0q/acoustic-guitar/h/q/g/rvl-38c-lgp-bls-revel-original-imah4ea8chaygjtw.jpeg?q=70&crop=false"
+                    alt="Acoustic Guitars"
+                    loading="lazy"
+                  />
+                  <div class="product__discription">
+                    <h1 class="product__name">Acoustic Guitars</h1>
+                    <p class="product__discount">Starting ₹1999</p>
+                    <p class="product__discountdetails">By Revel</p>
+                  </div>
+                </div>
+                <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+              </div>
+            </a>
+          </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>
