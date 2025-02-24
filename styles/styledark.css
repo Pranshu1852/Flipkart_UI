@@ -1,0 +1,78 @@
+:root{
+    --color-balck2: #121212;
+    --color-black5: #2a2a2a;
+    --color-black8:#00000033;
+    --color-gray5: #e0e0e0;
+    --color-white: #ffffff;
+}
+
+:has(#toggle--mode:checked){
+    body{
+        background-color: var(--color-balck2);
+        color: var(--color-gray5);
+    }
+
+    .navbar{
+        background-color: var(--color-balck2);
+    }
+
+    .navbar__searchbar{
+        background-color: var(--color-black5);
+    }
+    
+    .searchbar__input {
+        background-color: var(--color-black5);
+    }
+
+    .navbar__button--login{
+        background-color: var(--color-black5);
+    }
+
+    .homepage__category{
+        background-color: var(--color-black5);
+        border-color: transparent;
+        box-shadow: 0px 5px 10px 0px var(--color-black8);
+    }
+
+    .category__name{
+        color: var(--color-white);
+    }
+
+    .dealsbar__leftsection{
+        background-color: var(--color-black5);
+    }
+
+    .product__name{
+        color: var(--color-white);
+    }
+
+    .maincontent__itemsection{
+        background-color: var(--color-black5);
+    }
+
+    .btn--mode{
+        content: url(../assets/svgs/moon.svg);
+        filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.205));
+    }
+
+    .icon--downarrow {
+        content: url(../assets/svgs/downwhite.svg);
+      }
+
+    .dropdown--more{
+        background-color: var(--color-black5);
+    }
+
+    .dropdown__more--link{
+        color: var(--color-white);
+    }
+
+    .icon--dropmore{
+        fill: var(--color-white);
+        stroke: var(--color-white);
+    }
+
+    transition-property: all;
+    transition-timing-function: ease-in;
+    transition-duration: 100ms;
+}

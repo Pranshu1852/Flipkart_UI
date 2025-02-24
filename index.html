@@ -10,8 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" type="image/png">
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/styledark.css" />
   </head>
   <body>
     <div class="homepage">
@@ -23,7 +28,7 @@
               src="assets/svgs/logo.svg"
               alt="flipkart logo"
             />
-            <div class="navbar__searchbar">
+            <div class="navbar__searchbar" aria-label="Product searchbar">
               <input
                 class="searchbar__input"
                 type="text"
@@ -37,15 +42,68 @@
             </div>
           </div>
           <div class="navbar__section2">
+            <input id="toggle--mode" type="checkbox" class="hidden--checkbox" />
+            <label for="toggle--mode" class="btn--mode"> </label>
             <a role="button" class="navbar__button--login" href="#">Login</a>
-            <a role="button" class="navbar__button--more" href="#"
-              >More
-              <img
-                class="icon--downarrow--white"
-                src="assets/svgs/downwhite.svg"
-                alt="down arrow white"
-              />
-            </a>
+            <div class="btn__more--parent">
+              <a role="button" class="navbar__button--more" href="#"
+                >More
+                <img
+                  class="icon--downarrow--white"
+                  src="assets/svgs/downwhite.svg"
+                  alt="down arrow white"
+                />
+              </a>
+              <div class="dropdown--more">
+                <div class="dropdown__moreheader">
+                  <h3 class="dropdown__moreheadtext">New customer?</h3>
+                  <a class="btn--signup" href="#">Sign Up</a>
+                </div>
+                <nav class="dropdown__morelinks">
+                  <a class="dropdown__more--link" href="#"><svg class="icon--dropmore" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_11829_87876)">
+                      <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M12 15C14.0711 15 15.75 13.3211 15.75 11.25C15.75 9.17893 14.0711 7.5 12 7.5C9.92893 7.5 8.25 9.17893 8.25 11.25C8.25 13.3211 9.92893 15 12 15Z" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M5.98047 18.6904C6.54476 17.5789 7.40581 16.6454 8.46816 15.9933C9.53052 15.3413 10.7527 14.9961 11.9992 14.9961C13.2457 14.9961 14.4679 15.3413 15.5303 15.9933C16.5926 16.6454 17.4537 17.5789 18.018 18.6904" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_11829_87876">
+                        <rect width="24" height="24" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>My Profile</a>
+                  <a class="dropdown__more--link" href="#"><svg class="icon--dropmore" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M16.9116 6.41093C16.9116 6.41093 19.4188 7.65737 20.6557 8.1864C21.8592 8.69995 21.9955 10.6251 20.6711 11.2754C19.3468 11.9257 18.9817 12.0315 18.9817 12.0315C18.9817 12.0315 19.19 11.4922 19.1617 10.9709C19.0768 10.0419 16.3407 9.28834 14.5278 8.84189C14.5278 8.84189 13.1366 4.45998 12.5066 3.23934C11.874 2.01096 10.5908 1.5 10.5908 1.5L13.6226 1.54128C13.6226 1.54128 14.6667 1.48968 15.1295 2.61483C15.5898 3.73999 16.9116 6.41093 16.9116 6.41093Z" fill="#212121"/>
+                    <path d="M17.6095 16.891C17.6095 16.891 16.3804 19.3788 15.8403 20.651C15.326 21.8588 13.3691 21.9955 12.7237 20.6665C12.0757 19.3375 12.0088 19.1001 12.0088 19.1001C12.0088 19.1001 12.3997 19.1775 13.022 19.1491C13.9477 19.0639 14.7423 16.3181 15.1872 14.4988C15.1872 14.4988 19.5536 13.1001 20.7699 12.4704C21.994 11.8356 22.5006 10.5479 22.5006 10.5479L22.4594 14.0446C22.4594 14.0446 22.5108 14.6407 21.3897 15.1053C20.271 15.5672 17.6095 16.891 17.6095 16.891Z" fill="#212121"/>
+                    <path d="M7.08599 17.5788C7.08599 17.5788 4.59163 16.3401 3.3393 15.8033C2.13584 15.2898 1.99955 13.3621 3.32387 12.7143C4.6482 12.064 5.18051 11.9453 5.18051 11.9453C5.18051 11.9453 4.83593 12.4976 4.92079 13.1195C5.00822 14.0511 7.65687 14.7014 9.46464 15.1479C9.46464 15.1479 10.9098 19.504 11.4858 20.7504C12.1904 22.2678 13.3579 22.5001 13.3579 22.5001L9.9198 22.4485C9.9198 22.4485 9.32577 22.5001 8.8629 21.3775C8.40517 20.2498 7.08599 17.5788 7.08599 17.5788Z" fill="#212121"/>
+                    <path d="M6.41672 7.09875C6.41672 7.09875 7.65105 4.59812 8.18592 3.33877C8.69765 2.13103 10.616 1.99684 11.264 3.32329C11.912 4.65231 11.9738 4.89231 11.9738 4.89231C11.9738 4.89231 11.4852 4.90006 10.9683 4.92844C10.04 5.01619 9.28396 7.67423 8.84166 9.49099C8.84166 9.49099 4.49067 10.9181 3.25892 11.5194C1.56429 12.3452 1.5 13.4032 1.5 13.4032L1.56944 9.94775C1.56944 9.94775 1.518 9.35163 2.6366 8.88712C3.75521 8.42261 6.41672 7.09875 6.41672 7.09875Z" fill="#212121"/>
+                    </svg>Flipkart Plus Zone</a>
+                  <a class="dropdown__more--link" href="#"><svg class="icon--dropmore" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M21 16.621V7.37727C20.9993 7.24374 20.9634 7.11277 20.8959 6.99755C20.8284 6.88234 20.7317 6.78695 20.6156 6.72102L12.3656 2.08039C12.2545 2.01621 12.1284 1.98242 12 1.98242C11.8716 1.98242 11.7455 2.01621 11.6344 2.08039L3.38437 6.72102C3.26827 6.78695 3.1716 6.88234 3.10411 6.99755C3.03663 7.11277 3.00072 7.24374 3 7.37727V16.621C3.00072 16.7545 3.03663 16.8855 3.10411 17.0007C3.1716 17.1159 3.26827 17.2113 3.38437 17.2773L11.6344 21.9179C11.7455 21.9821 11.8716 22.0159 12 22.0159C12.1284 22.0159 12.2545 21.9821 12.3656 21.9179L20.6156 17.2773C20.7317 17.2113 20.8284 17.1159 20.8959 17.0007C20.9634 16.8855 20.9993 16.7545 21 16.621V16.621Z" stroke="#212121" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.5938 14.2959V9.4209L7.5 4.40527" stroke="#212121" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.8973 6.99316L12.0848 11.9994L3.10352 6.99316" stroke="#212121" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.0844 11.999L12 22.0115" stroke="#212121" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>Orders</a>
+                  <a class="dropdown__more--link" href="#"><svg class="icon--dropmore" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 20.249C12 20.249 2.625 14.999 2.625 8.62403C2.625 7.49705 3.01546 6.40488 3.72996 5.53334C4.44445 4.66179 5.43884 4.06472 6.54393 3.8437C7.64903 3.62268 8.79657 3.79137 9.79131 4.32106C10.7861 4.85076 11.5665 5.70874 12 6.74903V6.74903C12.4335 5.70874 13.2139 4.85076 14.2087 4.32106C15.2034 3.79137 16.351 3.62268 17.4561 3.8437C18.5612 4.06472 19.5555 4.66179 20.27 5.53334C20.9845 6.40488 21.375 7.49705 21.375 8.62403C21.375 14.999 12 20.249 12 20.249Z" stroke="#212121" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>Wishlist</h5></a>
+                  <a class="dropdown__more--link" href="#"><svg class="icon--dropmore" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M20.25 7.49902H3.75C3.33579 7.49902 3 7.83481 3 8.24902V11.249C3 11.6632 3.33579 11.999 3.75 11.999H20.25C20.6642 11.999 21 11.6632 21 11.249V8.24902C21 7.83481 20.6642 7.49902 20.25 7.49902Z" stroke="#212121" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19.5 11.999V18.749C19.5 18.9479 19.421 19.1387 19.2803 19.2794C19.1397 19.42 18.9489 19.499 18.75 19.499H5.25C5.05109 19.499 4.86032 19.42 4.71967 19.2794C4.57902 19.1387 4.5 18.9479 4.5 18.749V11.999" stroke="#212121" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 7.49902V19.499" stroke="#212121" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.2469 6.43945C15.1781 7.49882 12 7.49882 12 7.49882C12 7.49882 12 4.3207 13.0594 3.25195C13.4821 2.82926 14.0554 2.5918 14.6531 2.5918C15.2509 2.5918 15.8242 2.82926 16.2469 3.25195C16.6696 3.67464 16.907 4.24793 16.907 4.8457C16.907 5.44347 16.6696 6.01676 16.2469 6.43945V6.43945Z" stroke="#212121" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.75341 6.43945C8.82216 7.49882 12.0003 7.49882 12.0003 7.49882C12.0003 7.49882 12.0003 4.3207 10.9409 3.25195C10.5182 2.82926 9.94494 2.5918 9.34716 2.5918C8.74939 2.5918 8.1761 2.82926 7.75341 3.25195C7.33073 3.67464 7.09326 4.24793 7.09326 4.8457C7.09326 5.44347 7.33073 6.01676 7.75341 6.43945Z" stroke="#212121" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>Rewards</h5></a>
+                  <a class="dropdown__more--link" href="#"><svg class="icon--dropmore" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M20.3125 4.99902H2.3125C1.9644 4.99902 1.63056 5.1373 1.38442 5.38345C1.13828 5.62959 1 5.96343 1 6.31152V18.3115C1 18.6596 1.13828 18.9935 1.38442 19.2396C1.63056 19.4857 1.9644 19.624 2.3125 19.624H20.3125C20.6606 19.624 20.9944 19.4857 21.2406 19.2396C21.4867 18.9935 21.625 18.6596 21.625 18.3115V6.31152C21.625 5.96343 21.4867 5.62959 21.2406 5.38345C20.9944 5.1373 20.6606 4.99902 20.3125 4.99902ZM2.3125 6.12402H20.3125C20.3622 6.12402 20.4099 6.14378 20.4451 6.17894C20.4802 6.2141 20.5 6.2618 20.5 6.31152V8.31152H2.125V6.31152C2.125 6.2618 2.14475 6.2141 2.17992 6.17894C2.21508 6.14378 2.26277 6.12402 2.3125 6.12402ZM20.3125 18.499H2.3125C2.26277 18.499 2.21508 18.4793 2.17992 18.4441C2.14475 18.4089 2.125 18.3613 2.125 18.3115V9.43652H20.5V18.3115C20.5 18.3613 20.4802 18.4089 20.4451 18.4441C20.4099 18.4793 20.3622 18.499 20.3125 18.499Z" fill="#212121"/>
+                    <path d="M4.00391 10.8779H8.42225" stroke="#212121" stroke-linecap="round"/>
+                    <path d="M4.00391 12.6709H8.42225" stroke="#212121" stroke-linecap="round"/>
+                    <path d="M4.00391 10.8774C4.95069 10.8561 7.15987 10.8774 7.15987 12.771C7.15987 14.6646 4.95069 14.6432 4.00391 14.6646" stroke="#212121" stroke-linecap="round"/>
+                    <path d="M7.15884 17.8924C7.37257 18.0672 7.68758 18.0357 7.86244 17.822C8.03731 17.6083 8.00581 17.2933 7.79208 17.1184L7.15884 17.8924ZM3.68729 15.052L7.15884 17.8924L7.79208 17.1184L4.32053 14.2781L3.68729 15.052Z" fill="#212121"/>
+                    </svg>Gift Cards</a>
+                </nav>
+              </div>
+            </div>
             <a role="button" class="navbar__button--cart" href="#"
               ><img
                 class="icon--cart"
@@ -58,7 +116,7 @@
         </nav>
       </div>
 
-      <section class="homepage__category">
+      <section class="homepage__category" aria-label="Product categories">
         <a role="link" href="#" class="category__section">
           <img
             class="category__image"
@@ -143,20 +201,11 @@
           />
           <h1 class="category__name">
             Appliances
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
+            <img
               class="icon--downarrow"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m19.5 8.25-7.5 7.5-7.5-7.5"
-              />
-            </svg>
+              src="assets/svgs/downarrow.svg"
+              alt="down arrow"
+            />
           </h1>
         </a>
         <a role="link" href="#" class="category__section">
@@ -186,13 +235,19 @@
         </a>
       </section>
       <main class="homepage__maincontent">
-        <section class="homepage__dealsbar">
+        <section class="homepage__dealsbar" aria-labelledby="deals-header">
           <div class="dealsbar__leftsection">
             <div class="dealsbar__upper">
               <div class="dealsbar__header">
-                <h1 class="dealsbar__headingtext">Deals of the Day</h1>
+                <h1 id="deals-header" class="dealsbar__headingtext">
+                  Deals of the Day
+                </h1>
                 <div class="dealsbar__timer">
-                  <img class="icon--clock" src="assets/clock.png" alt="clock icon" />
+                  <img
+                    class="icon--clock"
+                    src="assets/clock.png"
+                    alt="clock icon"
+                  />
                   <p class="timer__text">22 : 07 : 36 Left</p>
                 </div>
               </div>
@@ -214,7 +269,11 @@
                       <p class="product__discountdetails">Knockout Deals!</p>
                     </div>
                   </div>
-                  <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                  <img
+                    class="icon--righthidden"
+                    src="./assets/svgs/rightarrow.svg"
+                    alt="rightarrow"
+                  />
                 </div>
               </a>
               <a role="link" href="#" class="product__link">
@@ -234,7 +293,11 @@
                       </p>
                     </div>
                   </div>
-                  <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                  <img
+                    class="icon--righthidden"
+                    src="./assets/svgs/rightarrow.svg"
+                    alt="rightarrow"
+                  />
                 </div>
               </a>
               <a role="link" href="#" class="product__link">
@@ -252,7 +315,11 @@
                       <p class="product__discountdetails">For All Top Models</p>
                     </div>
                   </div>
-                  <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                  <img
+                    class="icon--righthidden"
+                    src="./assets/svgs/rightarrow.svg"
+                    alt="rightarrow"
+                  />
                 </div>
               </a>
               <a role="link" href="#" class="product__link">
@@ -272,7 +339,11 @@
                       </p>
                     </div>
                   </div>
-                  <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                  <img
+                    class="icon--righthidden"
+                    src="./assets/svgs/rightarrow.svg"
+                    alt="rightarrow"
+                  />
                 </div>
               </a>
               <a role="link" href="#" class="product__link">
@@ -290,7 +361,11 @@
                       <p class="product__discountdetails">Now ₹999</p>
                     </div>
                   </div>
-                  <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                  <img
+                    class="icon--righthidden"
+                    src="./assets/svgs/rightarrow.svg"
+                    alt="rightarrow"
+                  />
                 </div>
               </a>
               <a role="link" href="#" class="product__link">
@@ -308,7 +383,11 @@
                       <p class="product__discountdetails">Now ₹999</p>
                     </div>
                   </div>
-                  <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                  <img
+                    class="icon--righthidden"
+                    src="./assets/svgs/rightarrow.svg"
+                    alt="rightarrow"
+                  />
                 </div>
               </a>
               <a role="link" href="#" class="product__link">
@@ -326,17 +405,37 @@
                       <p class="product__discountdetails">Knockout Deals!</p>
                     </div>
                   </div>
-                  <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                  <img
+                    class="icon--righthidden"
+                    src="./assets/svgs/rightarrow.svg"
+                    alt="rightarrow"
+                  />
                 </div>
               </a>
-              <input id="toggle--left" type="radio" class="hidden-radio">
-              <label for="toggle--left" class="btn btn--left"><a href="#product1"
-                ><img class="icon--left" src="./assets/svgs/leftarrow.svg" alt="leftarrow">
-              </a></label>
-              <input id="toggle--right" type="radio" class="hidden-radio">
-              <label for="toggle--right" class="btn btn--right"><a href="#product8"
-                ><img class="icon--right" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
-              </a></label>
+              <input
+                id="toggle--left"
+                type="radio"
+                class="hidden-radio"
+                aria-hidden="true"
+              />
+              <label for="toggle--left" class="btn btn--left"
+                ><img
+                  class="icon--left"
+                  src="./assets/svgs/leftarrow.svg"
+                  alt="leftarrow"
+              /></label>
+              <input
+                id="toggle--right"
+                type="radio"
+                class="hidden-radio"
+                aria-hidden="true"
+              />
+              <label for="toggle--right" class="btn btn--right"
+                ><img
+                  class="icon--right"
+                  src="./assets/svgs/rightarrow.svg"
+                  alt="rightarrow"
+              /></label>
             </div>
           </div>
           <img
@@ -346,10 +445,13 @@
           />
         </section>
 
-        <section class="maincontent__itemsection">
+        <section
+          class="maincontent__itemsection"
+          aria-labelledby="items__header"
+        >
           <div class="itemsection__upper">
             <div class="itemsection__header">
-              <h1 class="itemsection__headingtext">
+              <h1 id="items__header" class="itemsection__headingtext">
                 Books And music Instruments
               </h1>
               <p class="itemsection__subtext">Shop Now!</p>
@@ -372,7 +474,11 @@
                     <p class="product__discountdetails">Shop Now!</p>
                   </div>
                 </div>
-                <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                <img
+                  class="icon--righthidden"
+                  src="./assets/svgs/rightarrow.svg"
+                  alt="rightarrow"
+                />
               </div>
             </a>
             <a role="link" href="#" class="product__link">
@@ -390,7 +496,11 @@
                     <p class="product__discountdetails">Shop Now!</p>
                   </div>
                 </div>
-                <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                <img
+                  class="icon--righthidden"
+                  src="./assets/svgs/rightarrow.svg"
+                  alt="rightarrow"
+                />
               </div>
             </a>
             <a role="link" href="#" class="product__link">
@@ -408,7 +518,11 @@
                     <p class="product__discountdetails">Juarez, Revel..</p>
                   </div>
                 </div>
-                <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                <img
+                  class="icon--righthidden"
+                  src="./assets/svgs/rightarrow.svg"
+                  alt="rightarrow"
+                />
               </div>
             </a>
             <a role="link" href="#" class="product__link">
@@ -426,7 +540,11 @@
                     <p class="product__discountdetails">Shop Now!</p>
                   </div>
                 </div>
-                <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                <img
+                  class="icon--righthidden"
+                  src="./assets/svgs/rightarrow.svg"
+                  alt="rightarrow"
+                />
               </div>
             </a>
             <a role="link" href="#" class="product__link">
@@ -444,7 +562,11 @@
                     <p class="product__discountdetails">Shop Now!</p>
                   </div>
                 </div>
-                <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                <img
+                  class="icon--righthidden"
+                  src="./assets/svgs/rightarrow.svg"
+                  alt="rightarrow"
+                />
               </div>
             </a>
             <a role="link" href="#" class="product__link">
@@ -462,7 +584,11 @@
                     <p class="product__discountdetails">By Revel</p>
                   </div>
                 </div>
-                <img class="icon--righthidden" src="./assets/svgs/rightarrow.svg" alt="rightarrow">
+                <img
+                  class="icon--righthidden"
+                  src="./assets/svgs/rightarrow.svg"
+                  alt="rightarrow"
+                />
               </div>
             </a>
           </div>
