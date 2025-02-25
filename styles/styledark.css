@@ -72,6 +72,19 @@
         stroke: var(--color-white);
     }
 
+    .btn--right, .btn--left{
+        background-color: var(--color-balck2);
+        box-shadow: 0px 0px 7px 0.1px var(--color-black8);
+    }
+
+    .icon--right{
+        content: url(../assets/svgs/rightarrowwhite.svg);
+    }
+
+    .icon--left{
+        content: url(../assets/svgs/leftarrowwhite.svg);
+    }
+
     transition-property: all;
     transition-timing-function: ease-in;
     transition-duration: 100ms;
